@@ -84,15 +84,15 @@ a.logo:hover {
   color: #2196f3;
 }
 
-a.logo span {
-  color: var(--accent-color);
-}
-a.logo span:hover {
+a.logo:hover span {
   color: var(--primary-text-color);
 }
 
-/*Site nav*/
+a.logo span {
+  color: var(--accent-color);
+}
 
+/*Site nav*/
 
 .site-nav {
   display: flex;
@@ -169,6 +169,9 @@ a.logo span:hover {
 .auth-nav a:hover {
   color: var(--accent-color);
 }
+.auth-nav a:hover .auth-nav-icon {
+fill: var(--accent-color);
+}
 
 .auth-nav-icon {
   width: 16px ;
@@ -176,10 +179,6 @@ a.logo span:hover {
   fill: var(--text-color);
 
   margin-right: 10px;  
-}
-
-.auth-nav-icon:hover {
-  fill: var(--accent-color);
 }
 
 .e-mail {
@@ -436,6 +435,7 @@ p b {
   display: flex;
   margin: 16px 32px 24px;
   align-items:center;
+  justify-content: space-between;
 }
 
 .team-social {
@@ -447,8 +447,11 @@ p b {
   align-items:center;
 }
 
-.team-social:hover {
+.team-social:hover  {
   background-color: var(--accent-color);
+}
+.team-social:hover .social-icon {
+  fill: #FFFFFF
 }
 
 .social-icon {
@@ -459,10 +462,6 @@ p b {
   top: 9.38%;
   bottom: 9.38%;
   fill: #AFB1B8;
-}
-
-.social-icon:hover {
-  fill: #FFFFFF
 }
 
 
@@ -490,14 +489,17 @@ p b {
   fill: #AFB1B8;
 }
 
-.logo-item:hover {
+/* .logo-item:hover {
   fill: var(--accent-color);
-}
+} */
 
 .clients-logo .ellement:hover {
   border-color: var(--accent-color);
 }
 
+.clients-logo .ellement:hover .logo-item {
+  fill: var(--accent-color);
+}
 
 /*footer*/
 
@@ -506,15 +508,40 @@ background-color: #2f303a;
 height: 252px;
 margin-top: 94px;
 }
+/*Лого в футере*/
 
+.logo .web:hover {
+ color: #FFFFFF;
+}
+
+.logo .logo-studio {
+  color: #FFFFFF;
+}
+
+.logo .logo-studio:hover {
+  color: var(--accent-color);
+}
+
+
+a.logo:hover .logo-studio {
+  color:  var(--accent-color);
+}
+
+a.logo:hover .web {
+  color: #FFFFFF;
+}
+
+.footer-logo .logo {
+ padding: 0px;
+ margin-bottom: 20px;
+}
+
+.form {
+ display: flex;
+}
 
 /* Текста в футере*/
-.footer-logo {
-margin-top: 60px;
-}
-/* .logo-studio {
-color: #ffffff;
-} */
+
 .footer-text {
 color: #ffffff;
 font-size: 14px;
@@ -550,15 +577,27 @@ padding-left: 16px;
 display: flex;
 align-items: center;
 
-
 margin-right: 12px;
 }
 
-/* Футер соцсети*/
-.middle {
-  width: 206px;
+/* Флексы футера*/
+.footer {
+  display: flex;
+  justify-content: space-between;
 }
 
+.footer-color {
+  margin-top: 60px;
+}
+.middle {
+  width: 206px;
+  margin-top: 72px;
+  margin-right: 94px;
+}
+.footer-color-last {
+  margin-top: 72px;
+}
+/* Футер соцсети*/
 .social-footer-box {
 display: flex;
 justify-content: space-between;
@@ -570,10 +609,6 @@ justify-content: space-between;
   right: 0%;
   top: 9.38%;
   bottom: 9.38%;
-  fill: #AFB1B8;
-}
-
-.footer-social-icon:hover {
   fill: #FFFFFF
 }
 
@@ -584,18 +619,45 @@ justify-content: space-between;
   border-radius: 50%;
   align-content:center;
   align-items:center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.footer-social:hover {
+.footer-social:hover,
+.footer-social:focus {
   background-color: var(--accent-color);
 }
+.icon-send {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  margin-left: 10px;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary-button .subscribe:hover {
+  color: var(--text-color);
+}
+.primary-button:hover .icon-send {
+  fill: #757575;
+}
+
+/* .footer-social:hover .footer-social-icon {
+  fill: red;
+} */
+
+ 
 
 
 /* portfolio */
 
 /*Фильтры*/
 
-.button-container {
+/* .button-container {
 display: flex;
 align-items: center;
 justify-content:center;
@@ -603,10 +665,10 @@ justify-content:center;
 margin-top: 90px;
 }
 
-.button-container .element {
+.button-container .p-element {
 margin-left: 8px;
 }
-.button-container .element:not(:last-child) {
+.button-container .p-element:not(:last-child) {
 margin-right: 8px;}
 
 
@@ -632,7 +694,7 @@ margin-bottom: 50px;
 color: #ffffff ;
 background-color: #2196f3;
 border: 1px solid transparent;
-}
+} */
 
 /*Элементы портфолио*/
 
