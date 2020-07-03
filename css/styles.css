@@ -184,6 +184,7 @@ fill: var(--accent-color);
 .e-mail {
   display: flex;
   align-items: center;
+  j
 }
 
 
@@ -657,7 +658,7 @@ justify-content: space-between;
 
 /*Фильтры*/
 
-/* .button-container {
+.button-container {
 display: flex;
 align-items: center;
 justify-content:center;
@@ -694,7 +695,7 @@ margin-bottom: 50px;
 color: #ffffff ;
 background-color: #2196f3;
 border: 1px solid transparent;
-} */
+}
 
 /*Элементы портфолио*/
 
@@ -713,13 +714,13 @@ flex-wrap: wrap;
 justify-content: center;
 }
 
-.portfolio-list .element {
+.portfolio-list .port-element {
 width: calc((100% - 60px) / 3);
 margin-right: 30px;
 margin-bottom: 30px;
 }
 
-.portfolio-list .element:nth-child(3n) {
+.portfolio-list .port-element:nth-child(3n) {
 margin-right: 0;
 }
 

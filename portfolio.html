@@ -35,19 +35,23 @@
           <ul class="auth-nav">
             <li class="item">
               <a href="mailto:info@devstudio.com">
-                <!--
-                  <img src="./images/envelope1.png" alt="mail to" />
-                -->
-                info@devstudio.com
+                <div class="e-mail">
+                  <svg class="auth-nav-icon">
+                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </div>
               </a>
             </li>
 
             <li class="item">
               <a href="tel:+380961111111">
-                <!--
-<img src="./images/smartphone1.png" alt="call to" />
-                -->
-                +38 096 111 11 11
+                <div class="e-mail">
+                  <svg class="auth-nav-icon">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </div>
               </a>
             </li>
           </ul>
@@ -80,7 +84,7 @@
 
       <div class="conteiner">
         <ul class="portfolio-list">
-          <li class="element">
+          <li class="port-element">
             <a class="portfolio-title" href="">
               <img src="./images/portfolio-img/portfolio1.jpg" alt="" />
               <h2>Технокряк</h2>
@@ -93,7 +97,7 @@
             </a>
           </li>
 
-          <li class="element">
+          <li class="port-element">
             <a class="portfolio-title" href="">
               <img src="./images/portfolio-img/portfolio2.jpg" alt="" />
               <h2>Постер New Orlean vs Golden Star</h2>
@@ -106,7 +110,7 @@
             </a>
           </li>
 
-          <li class="element">
+          <li class="port-element">
             <a class="portfolio-title" href="">
               <img src="./images/portfolio-img/portfolio3.jpg" alt="" />
               <h2>Ресторан Seafood</h2>
@@ -119,7 +123,7 @@
             </a>
           </li>
 
-          <li class="element">
+          <li class="port-element">
             <a class="portfolio-title" href="">
               <img src="./images/portfolio-img/portfolio4.jpg" alt="" />
               <h2>Проект Prime</h2>
@@ -132,7 +136,7 @@
             </a>
           </li>
 
-          <li class="element">
+          <li class="port-element">
             <a class="portfolio-title" href="">
               <img src="./images/portfolio-img/portfolio5.jpg" alt="" />
               <h2>Проект Boxes</h2>
@@ -145,7 +149,7 @@
             </a>
           </li>
 
-          <li class="element">
+          <li class="port-element">
             <a class="portfolio-title" href="">
               <img src="./images/portfolio-img/portfolio6.jpg" alt="" />
               <h2>Inspiration has no Borders</h2>
@@ -158,7 +162,7 @@
             </a>
           </li>
 
-          <li class="element">
+          <li class="port-element">
             <a class="portfolio-title" href="">
               <img src="./images/portfolio-img/portfolio7.jpg" alt="" />
               <h2>Издание Limited Edition</h2>
@@ -171,7 +175,7 @@
             </a>
           </li>
 
-          <li class="element">
+          <li class="port-element">
             <a class="portfolio-title" href="">
               <img src="./images/portfolio-img/portfolio8.jpg" alt="" />
               <h2>Проект LAB</h2>
@@ -183,7 +187,7 @@
             </a>
           </li>
 
-          <li class="element">
+          <li class="port-element">
             <a class="portfolio-title" href="">
               <img src="./images/portfolio-img/portfolio9.jpg" alt="" />
               <h2>Growing Business</h2>
@@ -202,13 +206,15 @@
 
     <!--Контакты-->
     <section class="footer-background">
-      <div class="footer-container">
+      <div class="container footer">
         <div class="footer-color">
+          <div class="footer-logo">
+            <a href="/" class="logo">
+              <span class="web"> Web</span>
+              <span class="logo-studio"> Studio</span>
+            </a>
+          </div>
           <div>
-            <div class="footer-logo">
-              <a href="/" class="logo"><span> Web</span> Studio</a>
-            </div>
-
             <ul class="footer-contacts">
               <li>
                 <a
@@ -236,41 +242,62 @@
         </div>
 
         <!--Присоединяйтесь-->
-        <div class="footer-color middle">
-          <h4>ПРИСОЕДИНЯЙТЕСЬ</h4>
-          <ul class="social">
+        <div class="middle">
+          <h4 class="footer-color-middle">ПРИСОЕДИНЯЙТЕСЬ</h4>
+          <ul class="social-footer-box">
             <li class="s-element">
               <a href="">
-                <img src="./images/Ellipse-insta.png" alt="follow" />
+                <div class="footer-social">
+                  <svg class="footer-social-icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </div>
               </a>
             </li>
             <li class="s-element">
               <a href="">
-                <img src="./images/Ellipse-twitter.png" alt="follow" />
+                <div class="footer-social">
+                  <svg class="footer-social-icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </div>
               </a>
             </li>
             <li class="s-element">
               <a href="">
-                <img src="./images/Ellipse-fb.png" alt="follow" />
+                <div class="footer-social">
+                  <svg class="footer-social-icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </div>
               </a>
             </li>
             <li>
               <a href="">
-                <img src="./images/Ellipse-linkedin.png" alt="follow" />
+                <div class="footer-social">
+                  <svg class="footer-social-icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </div>
               </a>
             </li>
           </ul>
         </div>
 
         <!--Подпишитесь на рассылку-->
-        <div class="footer-color">
-          <h4>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h4>
+        <div class="footer-color-last">
+          <h4 class="footer-color-middle">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h4>
           <ul class="form">
-            <li class="element">
+            <li class="form-element">
               <p class="for-mail">E-mail</p>
             </li>
-            <li class="element">
-              <button class="primary-button">ПОДПИСАТЬСЯ</button>
+            <li class="form-element">
+              <button class="primary-button subscribe">
+                ПОДПИСАТЬСЯ
+                <svg class="icon-send">
+                  <use href="../images/symbol-defs.svg#icon-icon-send"></use>
+                </svg>
+              </button>
             </li>
           </ul>
         </div>
